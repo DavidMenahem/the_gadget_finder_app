@@ -1,0 +1,20 @@
+{
+    "email": "dvmena24@gmail.com",
+    "password": "12345"
+}
+
+Register register = new Register(1,"dave"
+,"mena","dvmena39@gmail.com","12345","0538285199","brener","13a"
+,"ra'anana","4320508");
+
+{
+    "first_name": "d",
+    "last_name": "m",
+    "email": "dvmena24@gmail.com",
+    "password": "12345",
+    "mobile": "",
+    "street": "",
+    "street_number": "",
+    "city": "",
+    "zipcode": ""
+}

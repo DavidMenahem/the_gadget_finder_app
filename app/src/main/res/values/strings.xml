@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">The Gadget Finder</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="welcome_to_the_gadget_finder">Welcome to the gadget finder</string>
+    <string name="register">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last name</string>
+    <string name="mobile">Mobile</string>
+    <string name="street_number">Street number</string>
+    <string name="street_address">Street address</string>
+    <string name="city">City</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="back_to_login">To login</string>
+    <string name="back_to_register">To register</string>
+    <string name="add_gadget">Add gadget</string>
+    <string name="gadgets">Gadgets</string>
+    <string name="gadget_name">Gadget name</string>
+    <string name="view_all">View all</string>
+    <string name="to_view_all">To View all</string>
+    <string name="request_failed">Request failed</string>
+    <string name="delete_gadget">Delete Gadget</string>
+</resources>

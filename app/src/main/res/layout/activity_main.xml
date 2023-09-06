@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_text_size"
+        android:text="@string/welcome_to_the_gadget_finder"
+        android:textColor="@color/grey"
+        />
+    <Button
+        android:id="@+id/main_login_button"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:textSize="@dimen/medium_text_size"
+        android:text="@string/login"/>
+    <Button
+        android:id="@+id/main_register_button"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:textSize="@dimen/medium_text_size"
+        android:text="@string/register"/>
+</LinearLayout>
