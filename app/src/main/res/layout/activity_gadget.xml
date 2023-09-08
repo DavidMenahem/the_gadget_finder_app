@@ -14,7 +14,7 @@
             android:layout_width="@dimen/header_width"
             android:layout_height="@dimen/header_height"
             android:text="@string/gadgets"
-            android:textSize="@dimen/medium_text_size"
+            android:textSize="@dimen/big_text_size"
             />
         <TextView
             android:id="@+id/gadgetResponse"
@@ -35,25 +35,25 @@
                 android:layout_width="@dimen/view_width"
                 android:layout_height="@dimen/view_height"
                 android:text="@string/gadget_name"
+                android:textSize="@dimen/medium_text_size"
+                />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_gadget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:textSize="@dimen/small_text_size"
                 />
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/gadget_txt_input"
                 android:layout_width="@dimen/view_width"
-                android:layout_height="@dimen/view_height">
-                <EditText
-                    android:id="@+id/add_gadget"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/small_text_size"
-                    />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:layout_height="@dimen/view_height"/>
+
             <Button
                 android:layout_width="@dimen/button_width_big"
                 android:layout_height="@dimen/button_height"
                 android:id="@+id/btn_add_gadget"
                 android:text="@string/add_gadget"
-                android:textSize="@dimen/medium_text_size"
+                android:textSize="@dimen/small_text_size"
                 />
 
             <Button
@@ -61,8 +61,8 @@
                 android:layout_height="@dimen/button_height"
                 android:id="@+id/btn_view_gadgets"
                 android:text="@string/view_all"
-                android:textSize="@dimen/medium_text_size"
-                android:layout_marginBottom="@dimen/margin_bottom_small"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginBottom="@dimen/margin_small"
                 />
         </LinearLayout>
     </ScrollView>
@@ -70,6 +70,6 @@
         android:layout_width="@dimen/view_width"
         android:layout_height="@dimen/view_height"
         android:textSize="@dimen/medium_text_size"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="@dimen/margin_big"
         />
 </LinearLayout>

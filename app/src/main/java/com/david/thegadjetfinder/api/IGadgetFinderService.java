@@ -16,6 +16,9 @@ import retrofit2.http.Path;
 
 public interface IGadgetFinderService {
     String BASE_URL = "https://the-gadget-finder.ew.r.appspot.com/";
+
+    @GET("/dummy/connection/{dummy}")
+    Call<String> dummy(@Path("dummy") String dummy);
     @POST("/login")
     Call<Response> login(@Body Login login);
 

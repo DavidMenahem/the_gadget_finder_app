@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -23,32 +24,26 @@ import retrofit2.Callback;
 
 public class LoginActivity extends AppCompatActivity implements ValidateEmailPassword {
 
-    private EditText email;
-    private EditText password;
+    private EditText email,password;
     private Button btnLogin;
-    private Button toRegister;
+    private TextView txtResponse,toRegister;
 
-    private TextView txtResponse;
-
-    private TextInputLayout emailInput, passwordInput;
-
+    private TextInputLayout emailInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         btnLogin = findViewById(R.id.btn_login);
+        btnLogin.setOnClickListener(v->login());
         toRegister = findViewById(R.id.to_register);
+        toRegister.setOnClickListener(v->registerActivity());
         txtResponse = findViewById(R.id.res_login);
         emailInput = findViewById(R.id.email_txt_input_login);
-        passwordInput = findViewById(R.id.password_txt_input_login);
-        btnLogin.setOnClickListener(v->login());
-        toRegister.setOnClickListener(v->registerActivity());
     }
+
     public void registerActivity(){
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
@@ -91,8 +86,6 @@ public class LoginActivity extends AppCompatActivity implements ValidateEmailPas
                         txtResponse.setText(message.toString());
                     }
                 }
-
-
                 @Override
                 public void onFailure(Call<Response> call, Throwable t) {
                     txtResponse.setText(R.string.request_failed);

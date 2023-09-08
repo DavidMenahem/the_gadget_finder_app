@@ -6,25 +6,28 @@
     android:layout_height="match_parent"
     tools:context="activity.LoginActivity"
     android:orientation="vertical">
-<LinearLayout
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
     <TextView
         android:layout_width="@dimen/header_width"
         android:layout_height="@dimen/header_height"
-        android:textSize="@dimen/small_text_size"
+        android:textSize="@dimen/big_text_size"
         android:text="@string/login"
+        android:layout_marginBottom="@dimen/margin_small"
         />
-    <Button
+    <TextView
         android:id="@+id/to_register"
         android:layout_width="@dimen/button_width_big"
         android:layout_height="@dimen/button_height"
         android:text="@string/back_to_register"
-        android:textSize="@dimen/medium_text_size"
-        android:layout_gravity="right"
+        android:textSize="@dimen/small_text_size"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:textColor="@color/blue"
+        android:layout_alignParentEnd="true"
         />
-</LinearLayout>
+</RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -37,47 +40,47 @@
                 android:layout_width="@dimen/text_width"
                 android:layout_height="@dimen/text_height"
                 android:text="@string/email"
+                android:textSize="@dimen/medium_text_size"
                 />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:textSize="@dimen/small_text_size"
+               />
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/email_txt_input_login"
                 android:layout_width="@dimen/view_width"
-                android:layout_height="@dimen/view_height">
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/email"
-                    android:textSize="@dimen/small_text_size"
-                    android:layout_marginBottom="@dimen/margin_bottom_small"
-                    android:text="dvmena39@gmail.com"/>
-            </com.google.android.material.textfield.TextInputLayout>>
+                android:layout_height="@dimen/view_height" />
+
             <TextView
                 android:layout_width="@dimen/text_width"
                 android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/medium_text_size"
                 android:text="@string/password"
                 />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:textSize="@dimen/small_text_size" />
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/password_txt_input_login"
                 android:layout_width="@dimen/view_width"
-                android:layout_height="@dimen/view_height">
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/password"
-                    android:textSize="@dimen/small_text_size"
-                    android:layout_marginBottom="@dimen/margin_bottom_small"
-                    android:text="123456"/>
-            </com.google.android.material.textfield.TextInputLayout>
+                android:layout_height="@dimen/view_height"/>
+
             <Button
                 android:id="@+id/btn_login"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
                 android:text="@string/login"
-                android:textSize="@dimen/medium_text_size"/>
+                android:textSize="@dimen/small_text_size"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/res_login"
-                android:layout_marginBottom="100dp"/>
+                android:textSize="@dimen/medium_text_size"
+                android:layout_marginBottom="@dimen/margin_big"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

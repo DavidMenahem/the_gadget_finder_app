@@ -70,8 +70,6 @@ public class MapActivity extends AppCompatActivity {
         List<Integer> randomNumbers = getRandomPositions();
         int x = randomNumbers.get(0);
         int y = randomNumbers.get(1);
-        int halfScreenWidth = randomNumbers.get(2);
-        int halfScreenHeight = randomNumbers.get(3);
         // pass the new x and y and add the circle to the layout
         CircleView locationCircle = new CircleView(this,x,y);
         CircleView refCircle = new CircleView(this,0,0);
@@ -83,8 +81,6 @@ public class MapActivity extends AppCompatActivity {
         // Start the animation
         locationCircle.startAnimation(alphaAnimation);
         String gadget = getGadgetName();
-        gadgetName.setX(x + halfScreenWidth);
-        gadgetName.setY(y + halfScreenHeight + 20);
         RelativeLayout layout = findViewById(R.id.map);
         layout.addView(locationCircle);
         layout.addView(refCircle);
@@ -103,14 +99,10 @@ public class MapActivity extends AppCompatActivity {
         Random random = new Random();
         //subtract half of the width and height from a random number
         //since the circle starts in the middle of the screen
-        float xUpperBound = screenWidth - screenWidth/2;
-        float yUpperBound = screenHeight - screenHeight/2;
-        int x = random.nextInt((int)screenWidth - 100) - (int)screenWidth/2;
-        int y = random.nextInt((int)screenHeight - 250) - (int)screenHeight/2;
+        int x = random.nextInt((int)screenWidth - 100) - (int)screenWidth/2 + 50;
+        int y = random.nextInt((int)screenHeight - 250) - (int)screenHeight/2 + 125;
         randomNumbers.add(x);
         randomNumbers.add(y);
-        randomNumbers.add((int)screenWidth/2);
-        randomNumbers.add((int)screenHeight/2);
         return randomNumbers;
     }
 
