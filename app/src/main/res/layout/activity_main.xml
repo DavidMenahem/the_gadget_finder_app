@@ -17,13 +17,13 @@
     <Button
         android:id="@+id/main_login_button"
         android:layout_width="@dimen/button_width_big"
-        android:layout_height="@dimen/button_height"
+        android:layout_height="wrap_content"
         android:textSize="@dimen/small_text_size"
         android:text="@string/login"/>
     <Button
         android:id="@+id/main_register_button"
         android:layout_width="@dimen/button_width_big"
-        android:layout_height="@dimen/button_height"
+        android:layout_height="wrap_content"
         android:textSize="@dimen/small_text_size"
         android:text="@string/register"/>
 </LinearLayout>

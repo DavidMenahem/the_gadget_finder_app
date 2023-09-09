@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity implements ValidateEmailPas
                         StringBuilder message = new StringBuilder();
                         if (res.equals("User is logged in")) {
                             String name = response.body().getName();
-                            message.append("Hi " + name + "!\n" + res);
+                            message.append("Hi!\n" + res);
 
                             //save response data to android session
                             SharedPreferences preferences = getSharedPreferences("my_preferences", Context.MODE_PRIVATE);

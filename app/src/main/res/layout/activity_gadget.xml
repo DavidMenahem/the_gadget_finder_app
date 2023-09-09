@@ -19,7 +19,7 @@
         <TextView
             android:id="@+id/gadgetResponse"
             android:layout_width="@dimen/view_width"
-            android:layout_height="@dimen/view_height"
+            android:layout_height="wrap_content"
             android:textSize="@dimen/medium_text_size"
             />
     </LinearLayout>
@@ -33,7 +33,7 @@
             android:orientation="vertical">
             <TextView
                 android:layout_width="@dimen/view_width"
-                android:layout_height="@dimen/view_height"
+                android:layout_height="wrap_content"
                 android:text="@string/gadget_name"
                 android:textSize="@dimen/medium_text_size"
                 />
@@ -46,11 +46,11 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/gadget_txt_input"
                 android:layout_width="@dimen/view_width"
-                android:layout_height="@dimen/view_height"/>
+                android:layout_height="wrap_content"/>
 
             <Button
                 android:layout_width="@dimen/button_width_big"
-                android:layout_height="@dimen/button_height"
+                android:layout_height="wrap_content"
                 android:id="@+id/btn_add_gadget"
                 android:text="@string/add_gadget"
                 android:textSize="@dimen/small_text_size"
@@ -58,7 +58,7 @@
 
             <Button
                 android:layout_width="@dimen/button_width_big"
-                android:layout_height="@dimen/button_height"
+                android:layout_height="wrap_content"
                 android:id="@+id/btn_view_gadgets"
                 android:text="@string/view_all"
                 android:textSize="@dimen/small_text_size"
@@ -68,7 +68,7 @@
     </ScrollView>
     <TextView
         android:layout_width="@dimen/view_width"
-        android:layout_height="@dimen/view_height"
+        android:layout_height="wrap_content"
         android:textSize="@dimen/medium_text_size"
         android:layout_marginBottom="@dimen/margin_big"
         />
